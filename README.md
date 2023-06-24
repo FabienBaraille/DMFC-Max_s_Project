@@ -14,3 +14,6 @@ Le projet comprendra :
 
 Le projet débute, je vais mettre en application ce que j'apprends pendant ma formation, je vais essayer d'organiser le projet de manière la plus "pro" possible en commencant par des schémas organisationnels, un MCD et peut être un figma.
 L'idée ici est d'apporté un projet qui collera le plus fidèlement possible aux souhaits du "client" et le faire évoluer au fil de mon apprentissage, de mon gain de compétence et de ma découverte de nouveaux outils.
+
+
+Le premier PDF contient les premières infos pour la première réflexion sur le projet, viennent alors les premiers schémas d'organistion du projet pour les premiers échanges sur le sujet.
