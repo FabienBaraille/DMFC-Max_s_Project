@@ -1,0 +1,123 @@
+@use '../../styles/variables' as v;
+
+#profil-page {
+  width: 90%
+};
+
+.profil {
+  line-height: 2.5em;
+  p {
+    font-family: v.$main-font;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+  }
+};
+
+.perso {
+  color:v.$orange;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 0.03em black;
+};
+
+#profil-change {
+  width: 90%
+};
+
+.change-info {
+  display: flex;
+  line-height: 1em;
+  align-items: center;
+  div {
+    margin: 0.2rem 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: auto;
+    label {
+      font-family: v.$main-font;
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem; 
+    }
+    button, input, select{
+      border: unset;
+      padding: 0.3rem;
+      border-radius: 5px;
+      width: 100%;
+    }
+    input, select {
+      background: v.$cell-back;
+      box-shadow: 0 0 2px 2px v.$shadow;
+      width: 200px;
+    }
+    .form-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button {
+        margin: 0.3rem 0;
+        background: v.$nav-back;
+        color: v.$orange;
+        border: unset;
+        width: fit-content;
+        font-size: 1rem;
+        &:hover {
+          background: v.$orange;
+          color: v.$nav-back;
+        }
+      }
+    }
+  }
+  .wrapper-strength {
+    flex-direction: row;
+    justify-content: center;
+    p {
+      margin-right: 5px;
+    }
+  }
+};
+
+
+@media screen and (min-width: 768px) {
+  .change-info {
+    div {
+      flex-flow: row nowrap;
+      width: auto;
+      justify-content: space-between;
+    }
+    .changeContainer, .inputContainer {
+      width: 90%;
+    }
+    input {
+      width: 250px;
+    }
+    label, input, select  {
+      margin-right: 1em;
+    }
+    .password-input {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+    #passwordInput {
+      position: relative;
+      .wrapper-strength{
+        position: absolute;
+        top: 38px;
+        right: 100px;
+        flex-wrap: nowrap;
+        width: 200px;
+      }
+      p {
+        margin-right: 5px;
+      }
+      span {
+        right: 20px;
+        top: unset;
+      }
+    }
+  }
+  .password {
+    position: relative;
+  }
+};

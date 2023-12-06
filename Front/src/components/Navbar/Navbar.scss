@@ -1,0 +1,71 @@
+@use '../../styles/variables' as v;
+
+.navbar {
+  background: v.$nav-back;
+  color: v.$titles;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: v.$main-font;
+  font-size: 1.4rem;
+  height: 52px;
+  width: 100%;
+  position: fixed;
+  top: 4.3em;
+  right: 0;
+  z-index: 97;
+  box-shadow: 0 5px 4px 0 v.$light-orange;
+  .menu {
+    padding: 0.5em;
+    color: v.$titles;
+    &--active{ 
+      color: v.$orange;
+    }
+    &:hover {
+      background: v.$orange;
+      color: v.$nav-back;
+    }
+  }
+  @media (max-width: 1050px) {
+    display: block;
+    box-shadow: none;
+    width: 0.5px;
+    height: fit-content;
+    // transition: linear 1s;
+    a {
+      color: v.$titles; 
+      display: block;
+      margin: 0;
+      padding: 0.5em;
+    }
+  }
+}
+
+.show-menu {
+  padding: 0.5em;
+  text-align: right;
+  background-color: v.$nav-back;
+  width: fit-content;
+}
+
+.hamburger {
+  display: none;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 28px;
+  right: 13px;
+  .icone-burger {
+    filter: invert(43%) sepia(15%) saturate(5000%) hue-rotate(346deg);
+  }
+  .close {
+    content: url('/src/assets/design/x.svg');
+  }
+  .open {
+    content: url('/src/assets/design/menu.svg');
+  }
+  @media (max-width: 1050px) {
+    display: flex;
+  }
+}

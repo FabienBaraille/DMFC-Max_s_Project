@@ -1,0 +1,29 @@
+@use '/src/styles/variables' as v;
+
+.to-the-top {
+  font-family: v.$main-font;
+  font-size: 1rem;
+  display: none;
+  border: none;
+  background: v.$nav-back;
+  color: v.$orange;
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  z-index: 97;
+  cursor: cell;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  
+  .up-logo {
+    content: url('/src/assets/design/arrow-up-circle.svg');
+    filter: invert(43%) sepia(15%) saturate(5000%) hue-rotate(346deg) ;
+  }
+
+  &:hover {
+    background: v.$orange;
+    .up-logo {
+      filter: unset;
+    }
+  }
+}

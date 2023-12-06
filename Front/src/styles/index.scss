@@ -1,0 +1,76 @@
+@use 'reset';
+@use '/src/styles/variables' as v;
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/assets/fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/src/assets/fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* days-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Days One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/assets/fonts/days-one-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  background-image: url('/src/assets/design/wood-floor.png');
+}
+
+#root {
+  font-family: 'Roboto';
+  position: relative;
+  h2, h3, h4, h5 {
+    text-align: center;
+    font-family: v.$main-font;
+    text-shadow: 0 0 2px v.$orange;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    padding: 1rem 0 0 1rem;
+    text-align: unset;
+    font-size: 1.1rem;
+  }
+  h5 {
+    margin-bottom: 5px;
+  }
+  main {
+    margin: 7em 0 3em;
+  }
+  a {
+    cursor: pointer;
+  }
+  .error-message {
+    color: red;
+    text-shadow: 0 0 2px v.$shadow;
+    margin: 0.5rem 0;
+  }
+  .small-logo{
+    width: 2.7rem;
+  }
+}
+
+@media screen and (min-width : 768px) {
+  #root main {
+    margin-top: 11em;
+  }
+}
+
