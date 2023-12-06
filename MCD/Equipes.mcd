@@ -1,0 +1,41 @@
+:
+MATCH_SR: id, scoreE1, scoreE2
+:
+:
+DETERMINER, 1N ROUND, 11 MATCH_SR
+:
+
+:
+:
+PRONO_TOP10: id
+PARTICIPER, 1N EQUIPE, 1N MATCH_SR
+:
+:
+
+DEVINER, 1N PRONO_SR, 11 MATCH_SR
+:
+FAIRE3, 1N JOUEUR, 11 PRONO_TOP10
+CLASSER, 1N PRONO_TOP10, 1N EQUIPE
+:
+ROUND: id, name, deadline
+
+PRONO_SR: id, différence point
+FAIRE, 1N JOUEUR, 11 PRONO_SR
+JOUEUR: id, pseudo, mail, password, photo, présentation, score0
+CHOISIR, 11 JOUEUR, 11 EQUIPE
+EQUIPE: id, nom, trigramme, logo, points
+:
+
+:
+:
+FAIRE2, 11 JOUEUR, 11 PRONO_PO
+PRONO_PO: id, bracket
+PARTICIPER2, 1N EQUIPE, 1N MATCH_PO
+:
+
+:
+:
+:
+DEVINER2, 1N PRONO_PO, 11 MATCH_PO
+MATCH_PO: id, serie
+DETERMINER2, 1N ROUND, 11 MATCH_PO
