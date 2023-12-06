@@ -36,3 +36,11 @@ Le souhait du client était également de pouvoir ouvrir le jeu à d’autres gr
 
 Un rôle d’administrateur a été créé pour gérer les ligues, les utilisateurs et le report des informations générales de la NBA. 
 Nous avons réalisé ce projet sur 1 mois découpé en 4 sprints avec une équipe de 6 personnes, 3 spécialisés Back-end avec Symfony et 3 spécialisés en Front-End avec ReactJs.
+
+## Le repo pour le Front développé avec React JS
+
+https://github.com/FabienBaraille/dmfc-front
+
+## Le repo pour le Back développé avec Symfony
+
+https://github.com/FabienBaraille/dmfc-back
